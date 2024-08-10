@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1A1B1E;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+body main {
+  text-align: center;
+  padding: 24px;
+  min-width: 360px;
+  border-radius: 8px;
+}
+body main h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+body main .grid {
+  padding-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+body main .grid button {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body main .grid .start {
+  background-color: #008746;
+  text-transform: uppercase;
+}
+body main .grid .start:hover {
+  background-color: #009e52;
+}
+body main .grid .stop {
+  display: none;
+  background-color: #2D3036;
+}
+body main .grid .stop:hover {
+  background-color: #32353b;
+}/*# sourceMappingURL=style.css.map */

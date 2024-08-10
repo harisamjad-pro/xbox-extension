@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Xbox Cloud Gaming Auto-Jump",
+    "version": "1.0",
+    "description": "Automatically presses the jump button every 1 minute and 30 seconds in Xbox Cloud Gaming.",
+    "permissions": [
+        "activeTab",
+        "scripting","tabs", "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.xbox.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
